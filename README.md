@@ -2,6 +2,12 @@
 
 A modern, fast, and elegant personal technical blog built with Next.js 15, TypeScript, and Markdown.
 
+## 🌐 Live Demo
+
+**Production URL**: [https://microblog-bub6sxb3f-nice-and-rich-2030s-projects.vercel.app/](https://microblog-bub6sxb3f-nice-and-rich-2030s-projects.vercel.app/)
+
+**GitHub Repository**: [https://github.com/nice-rich-2030/microblog](https://github.com/nice-rich-2030/microblog)
+
 ## 🚀 Tech Stack
 
 - **Framework**: [Next.js 15](https://nextjs.org/) (App Router)
@@ -148,18 +154,47 @@ Comprehensive documentation is available in the `docs/` directory:
 
 ## 🚀 Deployment
 
-### Deploy to Vercel
+### Current Deployment Status
+
+✅ **Deployed on Vercel**
+- **Production URL**: https://microblog-bub6sxb3f-nice-and-rich-2030s-projects.vercel.app/
+- **Build Status**: ✅ Passing
+- **Framework**: Next.js 15.5.5
+- **Node Version**: 20.x
+- **Package Manager**: pnpm 10.18.3
+
+### Environment Variables (Production)
+
+Required environment variables configured on Vercel:
+```env
+NEXT_PUBLIC_SITE_URL=https://microblog-bub6sxb3f-nice-and-rich-2030s-projects.vercel.app
+NEXT_PUBLIC_SITE_NAME=My Tech Blog
+```
+
+### Deploy to Vercel (New Setup)
 
 1. Push your code to GitHub
 2. Import your repository on [Vercel](https://vercel.com/new)
-3. Configure environment variables
+3. Configure environment variables:
+   - `NEXT_PUBLIC_SITE_URL`: Your production URL
+   - `NEXT_PUBLIC_SITE_NAME`: Your blog name
 4. Deploy!
 
 Vercel will automatically:
-- Build your project
-- Generate static pages
+- Build your project with `pnpm build`
+- Generate static pages (SSG)
 - Deploy to the edge network
 - Set up automatic deployments for future pushes
+
+### Continuous Deployment
+
+Every push to the `main` branch triggers an automatic deployment:
+1. GitHub webhook notifies Vercel
+2. Vercel pulls the latest code
+3. Runs `pnpm install` and `pnpm build`
+4. Deploys to production (2-5 minutes)
+
+See [docs/deployment.md](docs/deployment.md) for detailed deployment guide.
 
 ## 📄 License
 
