@@ -4,7 +4,7 @@ A modern, fast, and elegant personal technical blog built with Next.js 15, TypeS
 
 ## 🌐 Live Demo
 
-**Production URL**: [https://microblog-bub6sxb3f-nice-and-rich-2030s-projects.vercel.app/](https://microblog-bub6sxb3f-nice-and-rich-2030s-projects.vercel.app/)
+**Production URL**: [https://microblog-tau.vercel.app/](https://microblog-tau.vercel.app/)
 
 **GitHub Repository**: [https://github.com/nice-rich-2030/microblog](https://github.com/nice-rich-2030/microblog)
 
@@ -157,7 +157,7 @@ Comprehensive documentation is available in the `docs/` directory:
 ### Current Deployment Status
 
 ✅ **Deployed on Vercel**
-- **Production URL**: https://microblog-bub6sxb3f-nice-and-rich-2030s-projects.vercel.app/
+- **Production URL**: https://microblog-tau.vercel.app/
 - **Build Status**: ✅ Passing
 - **Framework**: Next.js 15.5.5
 - **Node Version**: 20.x
