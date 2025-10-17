@@ -1,4 +1,4 @@
-import Fuse from 'fuse.js';
+import Fuse, { type FuseResultMatch } from 'fuse.js';
 import type { Post } from '@/types/post';
 
 export interface SearchResult {
@@ -46,7 +46,7 @@ export function searchPosts(posts: Post[], query: string): SearchResult[] {
  * @param matches - Fuse.js match results
  * @returns Array of matched field names
  */
-function extractMatches(matches: readonly Fuse.FuseResultMatch[]): string[] {
+function extractMatches(matches: readonly FuseResultMatch[]): string[] {
   const fields = new Set<string>();
 
   matches.forEach((match) => {

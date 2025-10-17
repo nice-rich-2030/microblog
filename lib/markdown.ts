@@ -41,7 +41,7 @@ export async function markdownToHtml(markdown: string): Promise<string> {
     .use(html, { sanitize: false })
     .process(markdown);
 
-  let htmlContent = result.toString();
+  const htmlContent = result.toString();
 
   // Second pass: Add syntax highlighting and heading anchors
   const rehypeResult = await rehype()

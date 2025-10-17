@@ -113,7 +113,7 @@ export async function getPostBySlug(slug: string): Promise<Post | null> {
       readingTime,
       excerpt,
     };
-  } catch (error) {
+  } catch {
     return null;
   }
 }

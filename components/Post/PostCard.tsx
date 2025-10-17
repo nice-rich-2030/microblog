@@ -11,7 +11,7 @@ interface PostCardProps {
   className?: string;
 }
 
-export function PostCard({ post, variant = 'default', className }: PostCardProps) {
+export function PostCard({ post, className }: PostCardProps) {
   const formattedDate = format(new Date(post.frontMatter.date), 'yyyy年MM月dd日');
 
   return (
