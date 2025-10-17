@@ -5,6 +5,7 @@ import { Calendar, Clock, ArrowLeft } from 'lucide-react';
 import { Container } from '@/components/Layout/Container';
 import { Badge } from '@/components/ui/badge';
 import { Separator } from '@/components/ui/separator';
+import { ViewCounter } from '@/components/Analytics/ViewCounter';
 import { getAllPosts, getPostBySlug } from '@/lib/posts';
 import type { Metadata } from 'next';
 
@@ -99,6 +100,7 @@ export default async function PostPage({ params }: PostPageProps) {
               <Clock className="w-4 h-4" />
               <span>{readingTime} min read</span>
             </div>
+            <ViewCounter slug={slug} />
           </div>
 
           {/* Tags */}
