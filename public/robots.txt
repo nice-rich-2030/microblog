@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: ${NEXT_PUBLIC_SITE_URL}/sitemap.xml
+
+# Disallow admin or private paths (if any in the future)
+# Disallow: /admin/
